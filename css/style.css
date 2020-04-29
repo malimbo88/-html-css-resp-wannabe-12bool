@@ -7,7 +7,7 @@
   background-color: #f9f9f9;
 }
 
-h1, h3 {
+.wrapper .container h1, h3 {
   margin: 20px 0px 20px 0px;
 }
 
@@ -16,33 +16,13 @@ img {
 }
 
 /* Lezioni */
-#lezioni .container > .left,
-#lezioni .container > .right {
-  width: 50%;
-  float: left;
-}
-
 #lezioni {
   text-align: center;
 }
 
 /* Steps */
-#steps .container > .left,
-#steps .container > .central,
-#steps .container > .right {
-  float: left;
-  width: 33%;
-}
-
 #steps {
   text-align: center;
-}
-
-/* per centrare orizzontalmente */
-#lezioni .container img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Why */
@@ -50,16 +30,63 @@ img {
   text-align: center;
 }
 
-#why .container> .first,
-#why .container > .second,
-#why .container > .third {
-  width: 100%;
-  margin-top: 80px;
+#why .container > .row {
+  margin-top: 60px;
 }
 
 #why .container img {
   background-color: #428bca;
   border-radius: 50%;
+  margin-top: 20px;
   padding: 30px;
-  height: 250px;
+  height: 260px;
+}
+
+#why .container hr {
+  margin: 10px 0px 20px 0px;
+}
+
+/* Media Query */
+@media all and (max-width: 992px) {
+  /* General */
+  .wrapper {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .container {
+    margin-top:0px;
+  }
+
+  .wrapper .container h1 {
+    padding: 10px 0px 20px 0px;
+    margin:0px;
+  }
+
+  .wrapper .container p {
+    padding: 0px 0px 20px 0px;
+  }
+
+  /* Why */
+  #why .container hr {
+    margin: 30px 0px 20px 0px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  /* General */
+  .wrapper .container p {
+    padding: 0px 0px 50px 0px;
+  }
+  
+  /* Lezioni - Steps */
+  #lezioni .container [class*="col-"],
+  #steps .container [class*="col"] {
+    padding:0px 20px 0px 20px;
+  }
+
+  #lezioni .container img,
+  #steps .container img {
+    margin-top: 50px;
+  }
+
 }
