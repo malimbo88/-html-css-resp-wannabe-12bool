@@ -1,0 +1,65 @@
+/* General */
+.container {
+  margin-top: 100px;
+}
+
+.wrapper.grey {
+  background-color: #f9f9f9;
+}
+
+h1, h3 {
+  margin: 20px 0px 20px 0px;
+}
+
+img {
+  height: 200px;
+}
+
+/* Lezioni */
+#lezioni .container > .left,
+#lezioni .container > .right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* Steps */
+#steps .container > .left,
+#steps .container > .central,
+#steps .container > .right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* per centrare orizzontalmente */
+#lezioni .container img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Why */
+#why {
+  text-align: center;
+}
+
+#why .container> .first,
+#why .container > .second,
+#why .container > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .container img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+  height: 250px;
+}
